@@ -1,0 +1,12 @@
+D:\WIN20\win20-aspnetwebapi\lektion-2\BlazorAppHosted\Shared\bin\Debug\net5.0\BlazorAppHosted.Shared.deps.json
+D:\WIN20\win20-aspnetwebapi\lektion-2\BlazorAppHosted\Shared\bin\Debug\net5.0\BlazorAppHosted.Shared.dll
+D:\WIN20\win20-aspnetwebapi\lektion-2\BlazorAppHosted\Shared\bin\Debug\net5.0\ref\BlazorAppHosted.Shared.dll
+D:\WIN20\win20-aspnetwebapi\lektion-2\BlazorAppHosted\Shared\bin\Debug\net5.0\BlazorAppHosted.Shared.pdb
+D:\WIN20\win20-aspnetwebapi\lektion-2\BlazorAppHosted\Shared\obj\Debug\net5.0\BlazorAppHosted.Shared.csprojAssemblyReference.cache
+D:\WIN20\win20-aspnetwebapi\lektion-2\BlazorAppHosted\Shared\obj\Debug\net5.0\BlazorAppHosted.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\WIN20\win20-aspnetwebapi\lektion-2\BlazorAppHosted\Shared\obj\Debug\net5.0\BlazorAppHosted.Shared.AssemblyInfoInputs.cache
+D:\WIN20\win20-aspnetwebapi\lektion-2\BlazorAppHosted\Shared\obj\Debug\net5.0\BlazorAppHosted.Shared.AssemblyInfo.cs
+D:\WIN20\win20-aspnetwebapi\lektion-2\BlazorAppHosted\Shared\obj\Debug\net5.0\BlazorAppHosted.Shared.csproj.CoreCompileInputs.cache
+D:\WIN20\win20-aspnetwebapi\lektion-2\BlazorAppHosted\Shared\obj\Debug\net5.0\BlazorAppHosted.Shared.dll
+D:\WIN20\win20-aspnetwebapi\lektion-2\BlazorAppHosted\Shared\obj\Debug\net5.0\ref\BlazorAppHosted.Shared.dll
+D:\WIN20\win20-aspnetwebapi\lektion-2\BlazorAppHosted\Shared\obj\Debug\net5.0\BlazorAppHosted.Shared.pdb
