@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "GwxS0y6rn1uij0Y91eLVGESPs949YxdMSsX0eFGodOkfmyV1/Fte6L9Z6ktaBGjoL+WWDgJC9xCwnFfGzFitKw==",
+  "success": true,
+  "projectFilePath": "D:\\WIN20\\win20-aspnetwebapi\\lektion-3\\AzureFunctions\\AspNetWebApi\\AspNetWebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
