@@ -1,0 +1,28 @@
+﻿@page "/"
+@inject HttpClient Http
+
+<h1>Products</h1>
+<p>This is a list of products</p>
+
+@if (products == null)
+{
+<p>No products found</p>
+}
+else
+{
+<ul>
+    @foreach(var product in products)
+    {
+    <li>#@product.Id, @product.Name</li>
+    }
+</ul>
+}
+
+@code {
+    private IEnumerable<Product> products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await Http.GetFromJsonAsync<IEnumerable<Product>>("https://localhost:44367/api/products?AccessKey=34332f77932e4486975d9b937b77d18e==");
+    }
+}

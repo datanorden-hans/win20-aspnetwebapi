@@ -1,0 +1,9 @@
+D:\WIN20\win20-aspnetwebapi\lektion-4\repetition\WebApiWithKey\SharedLibrary\bin\Debug\netstandard2.0\SharedLibrary.deps.json
+D:\WIN20\win20-aspnetwebapi\lektion-4\repetition\WebApiWithKey\SharedLibrary\bin\Debug\netstandard2.0\SharedLibrary.dll
+D:\WIN20\win20-aspnetwebapi\lektion-4\repetition\WebApiWithKey\SharedLibrary\bin\Debug\netstandard2.0\SharedLibrary.pdb
+D:\WIN20\win20-aspnetwebapi\lektion-4\repetition\WebApiWithKey\SharedLibrary\obj\Debug\netstandard2.0\SharedLibrary.csprojAssemblyReference.cache
+D:\WIN20\win20-aspnetwebapi\lektion-4\repetition\WebApiWithKey\SharedLibrary\obj\Debug\netstandard2.0\SharedLibrary.AssemblyInfoInputs.cache
+D:\WIN20\win20-aspnetwebapi\lektion-4\repetition\WebApiWithKey\SharedLibrary\obj\Debug\netstandard2.0\SharedLibrary.AssemblyInfo.cs
+D:\WIN20\win20-aspnetwebapi\lektion-4\repetition\WebApiWithKey\SharedLibrary\obj\Debug\netstandard2.0\SharedLibrary.csproj.CoreCompileInputs.cache
+D:\WIN20\win20-aspnetwebapi\lektion-4\repetition\WebApiWithKey\SharedLibrary\obj\Debug\netstandard2.0\SharedLibrary.dll
+D:\WIN20\win20-aspnetwebapi\lektion-4\repetition\WebApiWithKey\SharedLibrary\obj\Debug\netstandard2.0\SharedLibrary.pdb
