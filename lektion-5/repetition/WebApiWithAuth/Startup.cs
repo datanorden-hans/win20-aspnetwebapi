@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApiWithAuth.Data;
+using WebApiWithAuth.Services;
 
 namespace WebApiWithAuth
 {
@@ -29,7 +30,7 @@ namespace WebApiWithAuth
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<SqlDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SqlDb")));
-
+            services.AddScoped<IIdentityService, IdentityService>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -52,6 +53,7 @@ namespace WebApiWithAuth
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
