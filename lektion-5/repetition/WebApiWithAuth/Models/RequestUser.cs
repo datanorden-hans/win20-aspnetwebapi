@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace WebApiWithAuth.Models
 {
-    public class SignInModel
+    public class RequestUser
     {
-        public string Email { get; set; }
-        public string Password { get; set; }
+        public int UserId { get; set; }
+        public string AccessToken { get; set; }
     }
 }
