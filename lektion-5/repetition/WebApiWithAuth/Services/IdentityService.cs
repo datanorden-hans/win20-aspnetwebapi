@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WebApiWithAuth.Data;
 using WebApiWithAuth.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace WebApiWithAuth.Services
 {
@@ -67,7 +68,7 @@ namespace WebApiWithAuth.Services
                             var tokenDescriptor = new SecurityTokenDescriptor
                             {
                                 Subject = new ClaimsIdentity(new Claim[] { new Claim("UserId", user.Id.ToString()) }),
-                                Expires = DateTime.Now.AddHours(1),
+                                Expires = DateTime.Now.AddSeconds(30),
                                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(_secretKey), SecurityAlgorithms.HmacSha512Signature)
                             };
 
@@ -98,20 +99,25 @@ namespace WebApiWithAuth.Services
 
         }
 
-        public async Task<IEnumerable<UserResponse>> GetUsers(RequestUser requestUser)
+        public async Task<IEnumerable<UserResponse>> GetUsersAsync()
         {
             var users = new List<UserResponse>();
 
-            if (_context.SessionTokens.Any(x => x.UserId == requestUser.UserId && x.AccessToken == requestUser.AccessToken))
+            foreach (var user in await _context.Users.ToListAsync())
             {
-                foreach(var user in await _context.Users.ToListAsync())
-                {
-                    users.Add(new UserResponse { FirstName = user.FirstName, LastName = user.LastName, Email = user.Email });
-                }
+                users.Add(new UserResponse { FirstName = user.FirstName, LastName = user.LastName, Email = user.Email });
             }
 
             return users;
         }
 
+
+        public bool ValidateAccessRights(RequestUser requestUser)
+        {
+            if (_context.SessionTokens.Any(x => x.UserId == requestUser.UserId && x.AccessToken == requestUser.AccessToken))
+                return true;
+
+            return false;
+        }
     }
 }

@@ -10,7 +10,7 @@ namespace WebApiWithAuth.Services
     {
         Task<bool> CreateUserAsync(SignUp model);
         Task<SignInResponse> SignInAsync(string email, string password);
-
-        Task<IEnumerable<UserResponse>> GetUsersAsync(RequestUser requestUser);
+        Task<IEnumerable<UserResponse>> GetUsersAsync();
+        bool ValidateAccessRights(RequestUser requestUser);
     }
 }

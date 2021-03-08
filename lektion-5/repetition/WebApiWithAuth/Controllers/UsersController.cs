@@ -46,5 +46,27 @@ namespace WebApiWithAuth.Controllers
 
             return new BadRequestResult();
         }
+
+
+        [HttpGet]
+        public async Task<IActionResult> GetUsers()
+        {
+            if(_identity.ValidateAccessRights(IdentityRequest()))
+                return new OkObjectResult(await _identity.GetUsersAsync());
+
+            return new UnauthorizedResult();
+
+        }
+
+
+        private RequestUser IdentityRequest()
+        {
+            return new RequestUser
+            {
+                UserId = int.Parse(HttpContext.User.FindFirst("UserId").Value),
+                AccessToken = Request.Headers["Authorization"].ToString().Split(" ")[1]
+            };
+
+        }
     }
 }
