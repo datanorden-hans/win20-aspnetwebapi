@@ -1,0 +1,43 @@
+﻿@page "/measurements"
+@inject HttpClient Http
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+
+
+<h3>DhtMeasurements</h3>
+@if (measurements == null)
+{
+    <p><em>No items found</em></p>
+}
+else
+{
+
+@foreach (var m in measurements)
+{
+    <div>@m.Temperature</div>
+}
+
+}
+
+
+
+@code {
+    private DhtMeasurement[] measurements;
+    private HttpResponseMessage result;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Http.DefaultRequestHeaders.Add("Authorization", $"Bearer {await localStorage.GetItemAsync<string>("accessToken")}");
+            result = await Http.GetAsync("https://localhost:44352/api/DhtMeasurements");
+
+            if (result.IsSuccessStatusCode)
+            {
+                var data = await result.Content.ReadAsStringAsync();
+                measurements = JsonConvert.DeserializeObject<DhtMeasurement[]>(data);
+            }
+        }
+        catch { }
+
+    }
+}

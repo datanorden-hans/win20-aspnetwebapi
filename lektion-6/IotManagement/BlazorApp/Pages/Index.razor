@@ -1,0 +1,23 @@
+﻿@page "/"
+@inject HttpClient Http
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+
+@code {
+    private HttpResponseMessage result;
+
+    protected override async Task OnInitializedAsync()
+    {
+        result = await Http.PostAsJsonAsync<SignUpSignIn>("https://localhost:44352/api/users/signin",
+            new SignUpSignIn { Email = "hans@domain.com", Password = "BytMig123!" });
+
+        var data = JsonConvert.DeserializeObject<dynamic>(await result.Content.ReadAsStringAsync());
+        await localStorage.SetItemAsync("accessToken", data.accessToken.ToString());
+    }
+} 

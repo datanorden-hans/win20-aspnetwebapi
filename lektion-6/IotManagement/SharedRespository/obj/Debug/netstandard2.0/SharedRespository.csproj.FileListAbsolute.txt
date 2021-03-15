@@ -1,0 +1,9 @@
+D:\WIN20\win20-aspnetwebapi\lektion-6\IotManagement\SharedRespository\bin\Debug\netstandard2.0\SharedRespository.deps.json
+D:\WIN20\win20-aspnetwebapi\lektion-6\IotManagement\SharedRespository\bin\Debug\netstandard2.0\SharedRespository.dll
+D:\WIN20\win20-aspnetwebapi\lektion-6\IotManagement\SharedRespository\bin\Debug\netstandard2.0\SharedRespository.pdb
+D:\WIN20\win20-aspnetwebapi\lektion-6\IotManagement\SharedRespository\obj\Debug\netstandard2.0\SharedRespository.csprojAssemblyReference.cache
+D:\WIN20\win20-aspnetwebapi\lektion-6\IotManagement\SharedRespository\obj\Debug\netstandard2.0\SharedRespository.AssemblyInfoInputs.cache
+D:\WIN20\win20-aspnetwebapi\lektion-6\IotManagement\SharedRespository\obj\Debug\netstandard2.0\SharedRespository.AssemblyInfo.cs
+D:\WIN20\win20-aspnetwebapi\lektion-6\IotManagement\SharedRespository\obj\Debug\netstandard2.0\SharedRespository.csproj.CoreCompileInputs.cache
+D:\WIN20\win20-aspnetwebapi\lektion-6\IotManagement\SharedRespository\obj\Debug\netstandard2.0\SharedRespository.dll
+D:\WIN20\win20-aspnetwebapi\lektion-6\IotManagement\SharedRespository\obj\Debug\netstandard2.0\SharedRespository.pdb
